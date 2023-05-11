@@ -1,0 +1,3 @@
+<template>
+    Panel page
+</template>
