@@ -39,11 +39,12 @@ watch(
 .locale-changer-select {
 	float: right;
 	display: inline;
-	padding: 2px;
+	padding: 5px;
 	text-align: center;
 	border: 0px;
 	font-size: 1rem;
 	cursor: pointer;
+	border-radius: 10px;
 }
 .locale-changer-select > * {
 	background: #fff;

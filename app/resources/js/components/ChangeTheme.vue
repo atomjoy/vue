@@ -22,40 +22,43 @@ onMounted(() => {
 <style scoped>
 .toggle-theme {
     float: right;
-    padding: 3px;
+    background: #eee;
+    box-sizing: border-box;
+    border: 1px solid #e9e9ed;
+    border-radius: 10px;
     margin: 5px;
-    border: 1px solid #cfcfcf;
-    border-radius: 20px;
-    width: 45px;
-    height: 25px;
-    text-align: left;
+    padding: 2px;
+    width: 44px;
+    height: 22px;
     cursor: pointer;
 }
 
 .toggle-theme-dark {
     border: 1px solid #fff;
+    background: transparent;
 }
 
 .theme-switch-icon {
     position: relative;
     float: left;
-    width: 17px;
-    height: 17px;
-    padding: 2px;
-    border-radius: 50%;
-    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background: #fff;
+    transition: all 2s;
 }
 
 .theme-switch-icon svg {
     position: absolute;
-    top:0;
-    left: 0;
-    width: 16px;
-    height: 16px;
+    top:2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
 }
 
 .toggle-theme-dark .theme-switch-icon {
     float: right !important;
+    background: transparent;
 }
 
 .toggle-theme-dark .theme-switch-icon svg {
@@ -63,17 +66,17 @@ onMounted(() => {
 }
 
 .toggle-theme .theme-switch-icon svg.theme-switch-sun {
-    display: inherit;
+    opacity: 1;
 }
 .toggle-theme .theme-switch-icon svg.theme-switch-moon {
-    display: none;
+    opacity: 0;
 }
 
 .toggle-theme-dark .theme-switch-icon svg.theme-switch-sun {
-    display: none;
+    opacity: 0;
 }
 
 .toggle-theme-dark .theme-switch-icon svg.theme-switch-moon {
-    display: inherit;
+    opacity: 1;
 }
 </style>
