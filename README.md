@@ -1,6 +1,6 @@
 # Vue 3 in Laravel 10
 
-Minimal Vue 3 application with router, i18n, pinia stores and @googlemaps/js-api-loader.
+Minimal Vue 3 application with router, i18n, pinia store.
 
 ## Install package
 

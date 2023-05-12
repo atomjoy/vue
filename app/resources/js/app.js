@@ -17,25 +17,26 @@ app.use(i18n)
 app.use(stores)
 app.use(router)
 
-// // Glogals provide/inject composition api
-// app.provide('globalStore', {
-// 	id: 1,
-// 	async getUsers() {
-// 		let res = await axios.get('https://jsonplaceholder.typicode.com/users')
-// 		console.log('App global store', res.data)
-// 	},
-// })
+/*
 
-// // v-color="'red'"
-// app.directive('color', (el, binding) => {
-// 	el.style.color = binding.value
-// })
+// Glogal provide/inject composition api
+app.provide('globalStore', {
+  user: null,
+  isLogged: false,
+  async getUser(id = 1) {
+    let res = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
+    console.log('App global store', res.data)
+    return res.data ?? null
+  },
+})
 
-// // v-highlight="'yellow'"
-// app.directive('highlight', {
-// 	mounted(el, binding, vnode) {
-// 		el.style.background = binding.value
-// 	},
-// })
+// Directive v-highlight="'yellow'"
+app.directive('highlight', {
+  mounted(el, binding, vnode) {
+    el.style.background = binding.value
+  },
+})
+
+*/
 
 app.mount('#app')

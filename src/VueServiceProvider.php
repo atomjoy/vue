@@ -28,6 +28,7 @@ class VueServiceProvider extends ServiceProvider
 				__DIR__ . '/../app/routes' => base_path('routes'),
 				__DIR__ . '/../app/package.json' => base_path('package.json'),
 				__DIR__ . '/../app/vite.config.js' => base_path('vite.config.js'),
+				__DIR__ . '/../app/jsconfig.json' => base_path('jsconfig.json'),
 			], 'vue-config');
 		}
 	}

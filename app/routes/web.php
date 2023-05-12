@@ -18,7 +18,7 @@ Route::get('/welcome', function () {
 	return view('welcome');
 });
 
-// Vue 
+// Vue catch all
 Route::fallback(function () {
 	return view('vue');
 });
