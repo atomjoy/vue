@@ -5,7 +5,7 @@ Minimal Vue 3 application with router, i18n, pinia store.
 ## Install package
 
 ```sh
-composer create-project laravel/laravel vue-app
+composer create-project laravel/laravel:^10.0 vue-app
 cd vue-app
 composer require atomjoy/vue
 ```
@@ -24,9 +24,11 @@ npm run build
 php artisan serve --host=localhost --port=8000
 ```
 
-## (DEV) Local import
+## (DEV) Local repository import
 
-packages/atomjoy/vue
+Package directory: packages/atomjoy/vue
+
+### Laravel composer.json
 
 ```json
 {
@@ -38,4 +40,15 @@ packages/atomjoy/vue
         "atomjoy/vue": "dev-main"
     },
 }
+```
+
+### Vue3 npm packages
+
+```sh
+npm install vue@next
+npm install vue-router@4
+npm install vue-i18n@9
+npm install --save-dev @vitejs/plugin-vue
+npm install pinia
+npm install @googlemaps/js-api-loader
 ```
