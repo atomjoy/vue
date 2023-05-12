@@ -19,13 +19,12 @@ app.use(router)
 
 /*
 
-// Glogal provide/inject composition api
-app.provide('globalStore', {
+// Glogal variable provide/inject composition api
+app.provide('globalVariable', {
   user: null,
   isLogged: false,
   async getUser(id = 1) {
     let res = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
-    console.log('App global store', res.data)
     return res.data ?? null
   },
 })
