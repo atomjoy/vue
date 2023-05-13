@@ -41,6 +41,7 @@ const pl = {
 		Policy: 'Polityka prywatności',
 		Services: 'Regulamin',
 		Support: 'Potrzebujesz pomocy?',
+		Subscribe: 'Zapisz się',
 	},
 	logout: {
 		good_bye: 'Do zobaczenia!',
@@ -75,6 +76,7 @@ const pl = {
 		Have_an_account: 'Masz już konto?',
 		Confirm_services: 'Zaakceptuj regulamin',
 		Policy: 'Regulamin',
+		Prefix: 'Prefix kraju',
 	},
 	password: {
 		Reset_password: 'Odzyskaj hasło',

@@ -41,6 +41,7 @@ const en = {
 		Policy: 'Policy',
 		Services: 'Services',
 		Support: 'Need support?',
+		Subscribe: 'Subscribe',
 	},
 	logout: {
 		good_bye: 'Good Bye!',
@@ -75,6 +76,7 @@ const en = {
 		Have_an_account: 'Have an account?',
 		Confirm_services: 'Acceptance of the regulations',
 		Policy: 'Terms of service',
+		Prefix: 'Phone prefix',
 	},
 	password: {
 		Reset_password: 'Reset password',
