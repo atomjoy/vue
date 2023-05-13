@@ -12,8 +12,8 @@ button {
 	margin-top: 20px;
 	padding: 16px 35px;
 	color: #fff;
-	background: var(--accent-primary);
-	border-radius: var(--border-radius);
+	background: var(--wow-accent);
+	border-radius: var(--wow-border-radius);
 	border: 0px;
 	font-size: 16px;
 	font-weight: 500;
