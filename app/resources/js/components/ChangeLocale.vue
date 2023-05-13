@@ -34,21 +34,25 @@ watch(
 	float: right;
 	width: auto;
 	height: auto;
-	padding: 5px;
+	border-radius: var(--border-radius);
+	background: var(--bg-secondary);
+	border: 1px solid var(--divider-primary);
 }
 .locale-changer-select {
 	float: right;
 	display: inline;
 	padding: 5px;
 	text-align: center;
-	border: 0px;
 	font-size: 1rem;
-	cursor: pointer;
-	border-radius: 10px;
+	cursor: pointer;	
+	box-sizing: border-box;
+	border-radius: var(--border-radius);
+	background: var(--bg-secondary);
+	border: 0px;
 }
 .locale-changer-select > * {
-	background: #fff;
-	color: #222;
+	background: var(--bg-secondary);
+	color: var(--text-primary);
 }
 .locale-changer-select:focus {
 	border: none;

@@ -22,20 +22,20 @@ onMounted(() => {
 <style scoped>
 .toggle-theme {
     float: right;
-    background: #eee;
-    box-sizing: border-box;
-    border: 1px solid #e9e9ed;
-    border-radius: 10px;
     margin: 5px;
     padding: 2px;
     width: 44px;
     height: 22px;
     cursor: pointer;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    background: var(--bg-secondary);
+    border: 1px solid var(--divider-primary);
 }
 
 .toggle-theme-dark {
-    border: 1px solid #fff;
     background: transparent;
+    border: 1px solid var(--divider-primary);
 }
 
 .theme-switch-icon {
@@ -43,9 +43,9 @@ onMounted(() => {
     float: left;
     width: 16px;
     height: 16px;
-    border-radius: 10px;
-    background: #fff;
-    transition: all 2s;
+    border-radius: var(--border-radius);
+    background: var(--bg-primary);
+    transition: all 1s;
 }
 
 .theme-switch-icon svg {
@@ -62,7 +62,7 @@ onMounted(() => {
 }
 
 .toggle-theme-dark .theme-switch-icon svg {
-    fill: #fff !important;
+    fill: var(--text-primary) !important;
 }
 
 .toggle-theme .theme-switch-icon svg.theme-switch-sun {
