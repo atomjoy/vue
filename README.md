@@ -25,6 +25,13 @@ npm run build
 php artisan serve --host=localhost --port=8000
 ```
 
+## Remove package
+The package is no longer needed.
+
+```sh
+composer remove atomjoy/vue
+```
+
 ## (DEV) Local repository import
 
 Package directory: packages/atomjoy/vue
