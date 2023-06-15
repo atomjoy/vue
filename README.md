@@ -11,7 +11,7 @@ composer require atomjoy/vue
 ```
 
 ### Overwrite files
-Backup first ***routes*** and ***resources/js*** directory!
+Backup first ***routes*** and ***resources*** directory!
 
 ```sh
 php artisan vendor:publish --tag=vue-config --force
