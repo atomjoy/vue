@@ -17,15 +17,15 @@ const vFocus = { mounted: (el) => el.focus() }
 let accentColor = '#ff6600'
 
 // Inputs
-let select1 = ref(null)
-let select2 = ref(null)
-let prefix = ref(2)
 let input = ref('')
 let password = ref('')
 let textarea = ref('Product description ...')
 let payment = ref(['cash']) // Selected in array
 let remember_me = ref(false)
 let radio = ref('')
+let select_country = ref(48)
+let select_code = ref(1)
+let select_name = ref('Ala')
 
 onMounted(() => {
 	// Route
@@ -59,31 +59,26 @@ function onSubmit(e) {
 </script>
 
 <template>
-	<TopMenu />
-
-	<p class="color">Home page {{ name }}</p>
-
 	<form @submit.prevent="onSubmit" style="margin: 50px auto; width: 90%; max-width: 530px; padding: 30px">
+		<h1>Form example</h1>
 		<Input :focus="'true'" type="text" name="name" v-model="input" placeholder="Name" label="Name" @keydown="validate" />
 
 		<Password type="password" name="password" v-model="password" placeholder="Password" label="Password" @valid="validPass" @invalid="invalidPass" />
 
-		<SelectPrefix label="Prefix" v-model="prefix" name="prefix" />
+		<SelectPrefix name="prefix" v-model="select_country" :label="$t('register.Prefix')" />
 
 		<Select
-			v-model="select1"
-			:placeholder="'Wybierz'"
-			:label="'Language'"
-			:name="'language'"
+			name="code"
+			v-model="select_code"
+			:label="$t('Language')"
 			:options="[
 				{ key: 1, value: 'Php' },
 				{ key: 2, value: 'Css' },
 				{ key: 3, value: 'Html' },
 				{ key: 4, value: 'JavaScript' },
-			]"
-			:class="'custom-class'" />
+			]" />
 
-		<Select v-model="select2" :placeholder="'Wybierz'" :label="'Language'" :name="'language1'" :options="['Go', 'Python', 'Rust', 'Javascript', 'Php', 'Html', 'Vue', 'React', 'Css']" :class="'custom-class'" />
+		<Select name="code" v-model="select_name" :label="$t('Language')" :options="['Ala', 'Ma', 'Kota']" />
 
 		<Textarea name="desc" v-model="textarea" placeholder="Some text" label="Description" />
 
@@ -98,7 +93,7 @@ function onSubmit(e) {
 
 		<button class="button">Update</button>
 
-		<h4>{{ input }} {{ password }} {{ select1 }} {{ select2 }} {{ prefix }} {{ payment }} {{ remember_me }} {{ textarea }} {{ radio }}</h4>
+		<h4>{{ select_code }} {{ select_country }} {{ select_name }} {{ input }} {{ password }} {{ payment }} {{ remember_me }} {{ textarea }} {{ radio }}</h4>
 	</form>
 </template>
 
@@ -140,5 +135,12 @@ label i {
 	width: 90%;
 	max-width: 480px;
 	padding: 30px;
+}
+
+h4 {
+	float: left;
+	width: 100%;
+	border: 1px solid #222;
+	padding: 20px;
 }
 </style>
