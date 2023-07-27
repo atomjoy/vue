@@ -36,7 +36,6 @@ textarea {
 	border-radius: var(--wow-border-radius);
 	border: 1px solid var(--wow-border);
 	background: var(--wow-input-bg);
-	font-family: var(--wow-font-family);
 }
 
 input:hover,
@@ -314,7 +313,8 @@ option {
 	align-items: center;
 }
 .checkbox-line label {
-	margin-top: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 .checkbox-line .checkbox {
 	position: absolute;
@@ -362,17 +362,17 @@ option {
 /* Checkbox onoff */
 
 .checkbox-checkmark-onoff {
-	min-height: 45px;
-	min-width: 80px;
+	min-height: 40px;
+	min-width: 70px;
 	right: 5px;
 }
 
 .checkmark-onoff {
 	float: left;
 	box-sizing: border-box;
-	height: 42px;
-	width: 92px;
-	padding: 5px;
+	height: 35px;
+	width: 70px;
+	padding: 4px;
 	margin-left: 15px;
 	background: var(--wow-input-bg);
 	border: 1px solid var(--wow-border);
@@ -383,8 +383,8 @@ option {
 
 .checkmark-onoff .dot {
 	float: left;
-	min-width: 30px;
-	min-height: 30px;
+	min-width: 26px;
+	min-height: 26px;
 	background: var(--wow-bg);
 	border-radius: var(--wow-border-radius);
 	border: 1px solid var(--wow-border);
@@ -398,7 +398,7 @@ option {
 }
 
 .checkmark-onoff-checked .dot {
-	float: right;
+	margin-left: 25px;
 	background: var(--wow-accent);
 	border: 1px solid var(--wow-accent);
 	transform: rotate(180deg);
