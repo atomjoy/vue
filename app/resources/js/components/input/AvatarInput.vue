@@ -1,7 +1,7 @@
 <script setup>
 import axios from 'axios'
 import Input from '@/components/input/Input.vue'
-import avatar from '@/assets/profil/avatar.png'
+import avatar from './profil/avatar.png'
 import { toRefs } from 'vue'
 
 const props = defineProps({
